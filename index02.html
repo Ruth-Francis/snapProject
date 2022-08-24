@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			 <link rel="stylesheet" href="style.css">
+			<!-- <style>
+			.test-display{
+				height: 20px;
+				border: 1px solid black;
+				border: none;
+				border-radius: .5em;
+				padding: 15 0px;
+				margin: 0 2rem;
+			}
+			a{
+				border: 1px solid red;
+				text-decoration: none;
+				color: black;
+				background-color: white;
+				padding: .2em;
+				display: inline-block;
+				border: none;
+				border-radius: .5em;
+			}
+			.btn-scroll{
+				border-radius: .5em;
+				border: none;
+				cursor: pointer;
+			}
+			a:hover + .test-display {
+				display: inline-block;
+			}
+			.para{
+				display: inline-block;
+			}
+		a:active + .test-display{
+			display: inline-block;
+			color: white;
+		}
+		.main-div-image{
+			display: inline-block;
+		}
+			 </style>
+			 <style>
+				button:hover{
+					background-color: white;
+					color: black;
+				}
+				.test-display{
+					border: 1px red solid;
+					display:none;
+					padding-right: 1%;
+					margin-bottom:10%;
+					margin-right: 10%;
+					border:none;
+					position: absolute;
+					background-color: white;
+					text-align: left;
+				}
+				.text-display{
+					display:none;
+					padding-left:1%;
+					margin-bottom: 10%;
+					position: absolute;
+					margin-right:10%;
+					border: 1px white solid;
+					border:none;
+					text-decoration: none;
+					background-color: white;
+					text-align: center;
+				}
+				.test-display{
+					padding-left: 2%;
+				}
+				
+				div:hover + .test-display{
+					display: block;
+					background-color: white;
+				}
+				div:hover + .text-display{
+					display: block;
+					background-color: white;
+				}
+			 </style>-->
+</head>
+<body>
+	<nav>
+		<ul class="navbar">
+			<li><a href="#"><img src="./images/logo.svg" alt="Logo"></a></li>
+		<li class="nav-link arrow-down-1"><a href="#">Features</a><img src="./images/icon-arrow-down.svg">
+			<div class="dropdown-content">
+				<a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a>
+				<a href="#"><img src="./images/icon-calendar.svg" alt="">Calendar</a>
+				<a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a>
+				<a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a>
+			</div></li> 
+			<li class="nav-link arrow-down-1"><a href="#"><button onclick="myFunction()" class="dropbtn"></button>Company</a><img src="./images/icon-arrow-down.svg">
+				<div class="dropdown-content-2">
+					<a href="#">History</a>
+					<a href="#">Our Team</a>
+					<a href="#">Blog</a>
+				</div></li>
+			<li class="nav-link"><a href="#"> Careers</a></li>
+			<li class="nav-link"><a href="#">About</a></li>
+			<li class="nav-link left-nav-item"><a href="#">Login</a></li>
+			<li class="nav-link"><a href="#" id="register-nav">Register</a></li>
+		</ul>
+	</nav>
+	<section class="main-section">
+		<div class="main-section-text">
+			<h1> Make<br> remote work</h1>
+			<p>Get your team in sync, no matter your location. Streamline processes, 
+				create team rituals, and watch productivity soar.
+			</p>
+			<button class="button" id="register-nav-2">Learn more</button>
+			<div class="footer-stuff">
+				<img src="./images/client-databiz.svg" alt="">
+				<img src="./images/client-audiophile.svg" alt="">
+				<img src="./images/client-meet.svg" alt="">
+				<img src="./images/client-maker.svg" alt="">
+			</div>
+		</div>
+		<div class="main-section-image">
+			<img src="./images/image-hero-desktop.png" alt="">
+		</div>
+	</section>
+  
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ruth Francis</a>.
+  </div>
+  <script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+</body>
+</html>

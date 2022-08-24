@@ -1,0 +1,10 @@
+body{
+	box-sizing: content-box;
+}
+
+.header-stuff{
+	display: flex;
+}
+.header-stuff > .img{
+	padding: 2rem;
+}
